@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  background-color: var(--eggshell);
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: var(--wenge-brown);
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--dark-charcoal);
+}
+
+h2 {
+  color: var(--nutmeg);
+  font-size: 28px;
+}
+
+#header-photo {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.container {
+  background-color: var(--white);
+  width: 730px;
+  margin: 100px auto;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+hr {
+  border-top: var(--light-grey);
+}
+
+#preparation-time {
+  background-color: var(--rose-white);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+#preparation-time p {
+  color: var(--dark-raspberry);
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: auto;
+}
+
+ul,
+ol {
+  padding-left: 25px;
+  margin: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+li span {
+  position: relative;
+  left: 15px;
+}
+
+.info {
+  padding-bottom: 10px;
+}
+
+#preparation-time ul li::marker {
+  color: var(--dark-raspberry);
+}
+
+#ingredients ul li::marker {
+  color: var(--nutmeg);
+}
+
+#instructions ol li::marker {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+#nutrition table tr td:nth-child(2) {
+  color: var(--nutmeg);
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr td {
+  border-bottom: 1px solid var(--light-grey);
+  padding: 10px 20px;
+}
+
+table tr:last-child td {
+  border: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--dark-raspberry);
+}
+
+@media (width<=750px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  #header-photo {
+    width: calc(100% + 100px);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: -50px;
+    margin-top: -50px;
+  }
+}
